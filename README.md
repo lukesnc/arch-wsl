@@ -88,8 +88,3 @@ Grab an AUR helper. I like [paru](https://github.com/Morganamilo/paru).
 ## Done
 
 Now even Windows users can say they use Arch (btw)
-
-### Help / Additional Reading
-
-- https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro
-- https://wiki.archlinux.org/title/Installation_guide
