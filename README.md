@@ -1,6 +1,6 @@
-# Arch on WSL (Windows Subsystem for Linux)
+# Arch on WSL
 
-This is how I get my instance of Arch working on WSL.
+This is how I get my instance of Arch working on Windows Subsystem for Linux.
 
 ## Setep
 
