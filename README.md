@@ -2,7 +2,7 @@
 
 This is how I get my instance of Arch working on Windows Subsystem for Linux.
 
-## Setep
+## Setup
 
 ### Step 1
 
@@ -10,7 +10,7 @@ Download the latest build of the [Arch Linux Docker image](https://gitlab.archli
 
 ### Step 2
 
-Setup the paths on your Windows system. I keep everything related to Arch in `C:\Arch\`.
+We will make a directory for our instance to live in. I like `C:\Arch\`.
 
 ```powershell
 New-Item -Path "C:\Arch" -ItemType Directory -Force
