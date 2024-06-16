@@ -16,7 +16,7 @@ We will make a directory for our instance to live in. I like `C:\Arch\`.
 New-Item -Path "C:\Arch" -ItemType Directory -Force
 ```
 
-Move the docker image into this folder.
+Move the Docker image into this folder.
 
 ### Step 3
 
@@ -26,7 +26,7 @@ Import the image into WSL:
 wsl --import Arch C:\Arch\ C:\Arch\YOUR-ARCH-IMAGE.tar.zst
 ```
 
-You can now launch into your instance.
+You can now launch into your instance:
 
 ```powershell
 wsl -d Arch
@@ -53,3 +53,33 @@ You can change this if you want a different locale.
 sed -i '/^# *en_US.UTF-8 UTF-8/s/^# *//' /etc/locale.gen
 locale-gen
 ```
+
+### Make a user
+
+Start by installing sudo and an editor:
+
+```bash
+groupadd sudo
+pacman -S sudo neovim
+EDITOR=nvim visudo
+```
+
+Once sudo is configured make a user:
+
+```bash
+myUsername=user
+useradd -m -G sudo $myUsername
+echo -e "[user]\ndefault=$myUsername" >> /etc/wsl.conf
+passwd $myUsername
+```
+
+This also makes our new user the default user on launch. We can now switch to our user.
+
+```
+su user
+```
+
+### AUR helper
+
+Grab an AUR helper. I like [paru](https://github.com/Morganamilo/paru).
+
