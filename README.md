@@ -38,6 +38,8 @@ From here Arch is now working but there's a few quirks because we used the Docke
 
 ### Init pacman
 
+A working package manager is good.
+
 ```bash
 pacman-key --init
 pacman -Sy archlinux-keyring
