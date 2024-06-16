@@ -36,7 +36,7 @@ wsl -d Arch
 
 From here Arch is now working but there's a few quirks because we used the Docker image.
 
-### Fix pacman
+### Init pacman
 
 ```bash
 pacman-key --init
