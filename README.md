@@ -10,7 +10,7 @@ Download the latest build of the [Arch Linux Docker image](https://gitlab.archli
 
 ### Step 2
 
-We will make a directory for our instance to live in. I like `C:\Arch\`.
+We will make a directory for our instance to live in. I like `C:\Arch\`. From PowerShell:
 
 ```powershell
 New-Item -Path "C:\Arch" -ItemType Directory -Force
