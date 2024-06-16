@@ -16,7 +16,7 @@ We will make a directory for our instance to live in. I like `C:\Arch\`.
 New-Item -Path "C:\Arch" -ItemType Directory -Force
 ```
 
-Move the Docker image into this folder.
+Move the Docker image we just downloaded into this folder.
 
 ### Step 3
 
