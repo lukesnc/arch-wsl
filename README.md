@@ -76,7 +76,7 @@ passwd $myUsername
 This also makes our new user the default user on launch. We can now switch to our user.
 
 ```
-su user
+su $myUsername
 ```
 
 ### AUR helper
