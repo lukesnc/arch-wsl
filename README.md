@@ -81,6 +81,14 @@ This also makes our new user the default user on launch. We can now switch to ou
 su $myUsername
 ```
 
+### Shortcut to Windows home directory
+
+Sometimes I need to hop into my Windows user's `Downloads/` or something, so this shortcut comes in handy:
+
+```bash
+ln -sf "/mnt/c/Users/$USER" ~/winhome
+```
+
 ### AUR helper
 
 Grab an AUR helper. I like [paru](https://github.com/Morganamilo/paru).
