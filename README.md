@@ -55,7 +55,7 @@ You can now launch into your instance:
 wsl -d Arch
 ```
 
-## Post-install
+## Post Installation
 
 From here Arch is now working but there's a few quirks because we used the Docker image. The steps prior to switching to our newly created user will be performed as root.
 
