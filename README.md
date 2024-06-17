@@ -21,14 +21,26 @@ Download the latest build of the [Arch Linux Docker image](https://gitlab.archli
 
 ### Step 2
 
-We will make a directory for our instance to live in. I like `C:\Arch\`.\
-From PowerShell:
+Since we're not using the Microsoft store to manage our instance, we will make a directory for our Arch setup to live in. I like `C:\Arch\`.\
+From PowerShell run:
 
 ```powershell
 New-Item -Path "C:\Arch" -ItemType Directory -Force
 ```
 
-Move the Docker image we just downloaded into this folder.
+Move the Docker image we just downloaded into this folder. We now have something like this (the image will be the one you chose from GitLab):
+
+```
+PS C:\> ls .\Arch\
+
+
+    Directory: C:\Arch
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/16/2024   7:47 PM      213692977 base-devel-20240616.0.241671.tar.zst
+```
 
 ### Step 3
 
@@ -46,7 +58,7 @@ wsl -d Arch
 
 ## Post-install
 
-From here Arch is now working but there's a few quirks because we used the Docker image.
+From here Arch is now working but there's a few quirks because we used the Docker image. The steps prior to switching to our newly created user will be performed as root.
 
 ### Init pacman
 
@@ -57,7 +69,7 @@ pacman-key --init
 pacman -Sy archlinux-keyring
 ```
 
-In `/etc/pacman.conf` I like to enable `Color` and disalbe `NoProgressBar` and `VerbosePkgLists`.
+In `/etc/pacman.conf` I like to enable `Color` and disalbe `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
 ### Generate locale
 
@@ -70,7 +82,7 @@ locale-gen
 
 ### Make a user
 
-Start by installing sudo and an editor:
+Start by installing `sudo` and an editor:
 
 ```bash
 pacman -S sudo neovim
@@ -78,7 +90,7 @@ groupadd sudo
 EDITOR=nvim visudo
 ```
 
-Once sudo is configured make a user:
+Once `sudo` is configured, make your user account. Change `myUsername` to whatever you'd like.
 
 ```bash
 myUsername=user
@@ -89,13 +101,13 @@ passwd $myUsername
 
 This also makes our new user the default user on launch. We can now switch to our user.
 
-```
+```bash
 su $myUsername
 ```
 
 ### Shortcut to Windows home directory
 
-Sometimes I need to hop into my Windows user's `Downloads/` or something, so this shortcut comes in handy:
+Sometimes I need to hop into my Windows user's `Downloads/` or something, so this shortcut comes in handy. If your Arch user's name is not the same as your Windows user's name you will need to edit this manually.
 
 ```bash
 ln -sf "/mnt/c/Users/$USER" ~/winhome
@@ -103,8 +115,13 @@ ln -sf "/mnt/c/Users/$USER" ~/winhome
 
 ### AUR helper
 
-Grab an AUR helper. I like [paru](https://github.com/Morganamilo/paru).
+Life is better with an AUR helper. I like [paru](https://github.com/Morganamilo/paru). [yay](https://github.com/Jguer/yay) is also a great option.
 
 ## Done
 
 Now even Windows users can say they use Arch (btw)
+
+### Help / Additional Reading
+
+- <https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro>
+- <https://wiki.archlinux.org/title/users_and_groups>
