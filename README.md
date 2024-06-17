@@ -59,14 +59,7 @@ wsl -d Arch
 
 From here Arch is now working but there's a few quirks because we used the Docker image. The steps prior to switching to our newly created user will be performed as root.
 
-### Init pacman
-
-A working package manager is good.
-
-```bash
-pacman-key --init
-pacman -Sy archlinux-keyring
-```
+### Configure pacman
 
 In `/etc/pacman.conf` I like to enable `Color` and disalbe `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
