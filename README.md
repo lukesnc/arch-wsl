@@ -5,7 +5,7 @@ This is how I get my instance of Arch working on Windows Subsystem for Linux. Un
 ## Requirements
 
 - Windows 11 x64
-- Windows Subsystem for Linux installed.
+- Windows Subsystem for Linux installed
 
 If Windows Subsystem for Linux is not installed, from PowerShell run:
 
