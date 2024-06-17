@@ -35,7 +35,7 @@ Move the Docker image we just downloaded into this folder.
 Import the image into WSL:
 
 ```powershell
-wsl --import Arch C:\Arch\ C:\Arch\YOUR-ARCH-IMAGE.tar.zst
+wsl --import Arch C:\Arch\ C:\Arch\YOUR_ARCH_IMAGE.tar.zst
 ```
 
 You can now launch into your instance:
