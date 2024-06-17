@@ -2,6 +2,17 @@
 
 This is how I get my instance of Arch working on Windows Subsystem for Linux. Unlike many Arch WSL solutions, this guide uses WSL to import the Arch Linux docker image as a WSL instance.
 
+## Requirements
+
+- Windows 11 x64
+- Windows Subsystem for Linux installed.
+
+If Windows Subsystem for Linux is not installed, from PowerShell run:
+
+```powershell
+wsl --install --no-distribution
+```
+
 ## Setup
 
 ### Step 1
