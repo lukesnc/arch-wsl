@@ -21,8 +21,7 @@ Download the latest build of the [Arch Linux Docker image](https://gitlab.archli
 
 ### Step 2
 
-Since we're not using the Microsoft store to manage our instance, we will make a directory for our Arch setup to live in. I like `C:\Arch\`.\
-From PowerShell run:
+Since we're not using the Microsoft store to manage our instance, we will make a directory for our Arch setup to live in. I will be using `C:\Arch\`. From PowerShell run:
 
 ```powershell
 New-Item -Path "C:\Arch" -ItemType Directory -Force
@@ -90,7 +89,7 @@ groupadd sudo
 EDITOR=nvim visudo
 ```
 
-Once `sudo` is configured, make your user account. Change `myUsername` to whatever you'd like.
+Once sudo is configured, make your user account. Change `myUsername` to whatever you'd like.
 
 ```bash
 myUsername=user
@@ -115,7 +114,7 @@ ln -sf "/mnt/c/Users/$USER" ~/winhome
 
 ### AUR helper
 
-Life is better with an AUR helper. I like [paru](https://github.com/Morganamilo/paru). [yay](https://github.com/Jguer/yay) is also a great option.
+Life is better with an AUR helper. I like [Paru](https://github.com/Morganamilo/paru). [Yay](https://github.com/Jguer/yay) is also a great option.
 
 ## Done
 
