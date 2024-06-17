@@ -61,7 +61,7 @@ In `/etc/pacman.conf` I like to enable `Color` and disalbe `NoProgressBar` and `
 
 ### Generate locale
 
-You can change this if you want a different locale.
+You can change this to a different locale if you'd like.
 
 ```bash
 sed -i '/^# *en_US.UTF-8 UTF-8/s/^# *//' /etc/locale.gen
