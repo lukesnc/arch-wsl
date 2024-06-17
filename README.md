@@ -73,8 +73,8 @@ locale-gen
 Start by installing sudo and an editor:
 
 ```bash
-groupadd sudo
 pacman -S sudo neovim
+groupadd sudo
 EDITOR=nvim visudo
 ```
 
