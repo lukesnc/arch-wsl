@@ -61,7 +61,15 @@ From here Arch is now working but there's a few quirks because we used the Docke
 
 ### Configure pacman
 
+The pacman provided by the image does not come with an lsign key[^1] so we need to init the keyring ourselves:
+
+```bash
+pacman-key --init
+```
+
 In `/etc/pacman.conf` I like to enable `Color` and disable `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
+
+[^1] From the Arch Linux Docker [GitLab page](https://gitlab.archlinux.org/archlinux/archlinux-docker#principles).
 
 ### Generate locale
 
