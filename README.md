@@ -109,6 +109,17 @@ ln -sf "/mnt/c/Users/$USER" ~/winhome
 
 Life is better with an AUR helper. I like [Paru](https://github.com/Morganamilo/paru). [Yay](https://github.com/Jguer/yay) is also a great option.
 
+### Enable systemd (optional)
+
+Systemd can be enabled by adding the following to `/etc/wsl.conf`:
+
+```
+[boot]
+systemd=true
+```
+
+*Enabling systemd might prevent the ability to run GUI apps from WSL. See [this gist](https://gist.github.com/lukesnc/8ce7cbee8456e5ef73315a40c4a77eba) for more information.*
+
 ## Done
 
 Now even Windows users can say they use Arch (btw)
