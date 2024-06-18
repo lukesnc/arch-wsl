@@ -61,7 +61,7 @@ From here Arch is now working but there's a few quirks because we used the Docke
 
 ### Configure pacman
 
-In `/etc/pacman.conf` I like to enable `Color` and disalbe `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
+In `/etc/pacman.conf` I like to enable `Color` and disable `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
 ### Generate locale
 
