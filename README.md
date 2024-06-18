@@ -69,7 +69,7 @@ pacman-key --init
 
 In `/etc/pacman.conf` I like to enable `Color` and disable `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
-[^1]: From the Arch Linux Docker [GitLab page](https://gitlab.archlinux.org/archlinux/archlinux-docker#principles).
+[^1]: From the Readme on the Arch Linux Docker [GitLab page](https://gitlab.archlinux.org/archlinux/archlinux-docker#principles).
 
 ### Generate locale
 
