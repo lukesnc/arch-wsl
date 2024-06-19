@@ -1,6 +1,6 @@
 # Arch Linux on WSL
 
-This is how I get my instance of Arch working on Windows Subsystem for Linux. Unlike many Arch WSL solutions, this guide uses WSL to import the Arch Linux Docker image as a WSL instance.
+This is a do it yourself guide to get Arch working on Windows Subsystem for Linux. Unlike many Arch WSL solutions, this guide uses WSL to import the Arch Linux Docker image as a WSL instance.
 
 ## Requirements
 
@@ -82,7 +82,7 @@ locale-gen
 
 ### Make a user
 
-Start by installing `sudo` and an editor:
+Start by installing `sudo` and an editor (doesn't have to be Neovim):
 
 ```bash
 pacman -S sudo neovim
@@ -126,7 +126,7 @@ Systemd can be enabled by adding the following to `/etc/wsl.conf`:
 systemd=true
 ```
 
-*Enabling systemd might prevent the ability to run GUI apps from WSL. See [this gist](https://gist.github.com/lukesnc/8ce7cbee8456e5ef73315a40c4a77eba) for more information.*
+*Enabling systemd might prevent the ability to run GUI apps from WSL and will increase the instance startup time. See [this gist](https://gist.github.com/lukesnc/8ce7cbee8456e5ef73315a40c4a77eba) for more information.*
 
 ## Done
 
