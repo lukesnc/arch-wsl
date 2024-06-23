@@ -59,6 +59,15 @@ wsl -d Arch
 
 From here Arch is now working but there's a few quirks because we used the Docker image. The next few steps prior to switching to our newly created user will be performed as root.
 
+### Generate locale
+
+You can change this to a different locale if you'd like.
+
+```bash
+sed -i '/^# *en_US.UTF-8 UTF-8/s/^# *//' /etc/locale.gen
+locale-gen
+```
+
 ### Configure pacman
 
 The pacman provided by the image does not come with an lsign key[^1] so we need to init the keyring ourselves:
@@ -70,15 +79,6 @@ pacman-key --init
 In `/etc/pacman.conf` I like to enable `Color` and disable `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
 [^1]: From the Readme on the Arch Linux Docker [GitLab page](https://gitlab.archlinux.org/archlinux/archlinux-docker#principles).
-
-### Generate locale
-
-You can change this to a different locale if you'd like.
-
-```bash
-sed -i '/^# *en_US.UTF-8 UTF-8/s/^# *//' /etc/locale.gen
-locale-gen
-```
 
 ### Make a user
 
