@@ -1,6 +1,6 @@
 # Arch Linux on WSL
 
-This is a do it yourself guide to get Arch working on Windows Subsystem for Linux. Unlike many Arch WSL solutions, this guide uses WSL to import the Arch Linux Docker image as a WSL instance.
+This is a do it yourself guide to get Arch working on Windows Subsystem for Linux.
 
 ## Requirements
 
