@@ -43,7 +43,7 @@ Mode                 LastWriteTime         Length Name
 
 ### Step 3
 
-Import the image into WSL:
+Import the image into WSL. If you chose a different path for your instance to live in you will need to use that path instead.
 
 ```powershell
 wsl --import Arch C:\Arch\ C:\Arch\YOUR_ARCH_IMAGE.tar.zst
