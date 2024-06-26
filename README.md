@@ -21,11 +21,7 @@ Download the latest build of the [Arch Linux Docker image](https://gitlab.archli
 
 ### Step 2
 
-Since we're not using the Microsoft store to manage our instance, we will make a directory for our Arch setup to live in. I will be using `C:\Arch\`. From PowerShell run:
-
-```powershell
-New-Item -Path "C:\Arch" -ItemType Directory -Force
-```
+Since we're not using the Microsoft store to manage our instance, we will need to make a directory for our Arch setup to live in. I will be using `C:\Arch\`.
 
 Move the Docker image we just downloaded into this folder. We now have something like this (the image will be the one you chose from GitLab):
 
