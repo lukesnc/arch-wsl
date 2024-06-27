@@ -122,7 +122,7 @@ Systemd can be enabled by adding the following to `/etc/wsl.conf`:
 systemd=true
 ```
 
-*Enabling systemd might prevent the ability to run GUI apps from WSL and will increase the instance startup time. See [this gist](https://gist.github.com/lukesnc/8ce7cbee8456e5ef73315a40c4a77eba) for more information.*
+*Enabling systemd might prevent the ability to run GUI apps from WSL and will increase the instance startup time. Since using Arch on WSL is not officially supported by Microsoft, there may be other quirks as well. See [this gist](https://gist.github.com/lukesnc/8ce7cbee8456e5ef73315a40c4a77eba) for more information regarding GUI apps.*
 
 ## Done
 
