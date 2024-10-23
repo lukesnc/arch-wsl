@@ -74,6 +74,12 @@ pacman-key --init
 
 In `/etc/pacman.conf` I like to enable `Color` and disable `NoProgressBar` and `VerbosePkgLists`. This way it looks more like how pacman comes by default on desktop.
 
+The Docker image also comes with a bunch of `NoExtract` rules. These are not present by default on Arch and can interfere with packages such as `man-pages`. These can be removed with:
+
+```bash
+sed -i '/^NoExtract/d' /etc/pacman.conf
+```
+
 [^1]: From the Readme on the Arch Linux Docker [GitLab page](https://gitlab.archlinux.org/archlinux/archlinux-docker#principles).
 
 ### Make a user
