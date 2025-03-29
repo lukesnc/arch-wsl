@@ -2,6 +2,9 @@
 
 This is a do it yourself guide to get Arch working on Windows Subsystem for Linux.
 
+> [!important]
+> This guide is **no longer needed** as Arch now hosts [their own official WSL images](https://gitlab.archlinux.org/archlinux/archlinux-wsl).
+
 ## Requirements
 
 - Windows 11 x64
